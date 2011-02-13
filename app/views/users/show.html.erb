@@ -1,19 +1,8 @@
-<p id="notice"><%= notice %></p>
+<%= gravatar_for @user %>
+<h2><%= @user.first_name + " " + @user.second_name + " " + @user.third_name %></h2>
 
-<p>
-  <b>First Name:</b>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <b>Second Name:</b>
-  <%= @user.second_name %>
-</p>
-
-<p>
-  <b>Third Name:</b>
-  <%= @user.third_name %>
-</p>
+<h3>Username:
+	<%= @user.username %></h3>
 
 <p>
   <b>Organization:</b>
@@ -23,16 +12,6 @@
 <p>
   <b>Email:</b>
   <%= @user.email %>
-</p>
-
-<p>
-  <b>Phone Number:</b>
-  <%= @user.phone_number %>
-</p>
-
-<p>
-  <b>Username:</b>
-  <%= @user.username %>
 </p>
 
 <p>

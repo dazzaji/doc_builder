@@ -1,2 +1,42 @@
 /* Meant for Specific Styles in Public Section of Site */
 
+body{
+	width: 99%;
+	margin: 0 auto auto auto;
+}
+
+header{
+	margin-top: 1%;
+	height: 70px;
+	background: #ddd;
+	padding: .5em;
+}
+
+.logo{
+	float: left;
+	width: 140px;
+	height: 50px;
+}
+
+nav{
+	float: right;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	height: 100%;
+	float: left;
+	padding-top: 1.5em;
+	padding-right: 5em;
+}
+nav li a{
+	padding: .8em;
+	text-decoration: none;
+	color: black;
+	font-size: 200%;
+}
+nav li a:hover{
+	background: blue;
+	color: black;
+}
