@@ -1,0 +1,19 @@
+# == Schema Information
+# Schema version: 20110206172912
+#
+# Table name: sections
+#
+#  id         :integer         not null, primary key
+#  section    :string(255)
+#  article_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  section: MyString
+
+two:
+  section: MyString

@@ -1,0 +1,14 @@
+<p>
+  <b>Subcategory:</b><br />
+  <%= @subcategory.subcategory %><br />
+  <b>Category of:</b><br />
+  <%= @subcategory.category.category %><br />
+  <b>Contains these Articles:</b><br />
+  <% @subcategory.articles.each do |a| %>
+	<%= a.article %><br/>
+  <% end %>
+</p>
+
+<%= link_to 'Index', subcategories_path %> |
+<%= link_to 'New', new_subcategory_path %> |
+<%= link_to 'Edit', edit_subcategory_path %>

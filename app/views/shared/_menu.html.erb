@@ -1,0 +1,14 @@
+<ul class = "primary_nav">
+	<li><%= link_to('Home', admin_path) %></li>
+	<li><%= link_to('Doc Buildr', buildr_path) %></li>
+	<li>Admin</li><ul class = "secondary_nav">
+		<!--<li><%# link_to('Account', :controller => :users, :action => :show, :id => @user_id) %></li>-->
+		<li><%= link_to('Categories', categories_path) %></li>
+		<li><%= link_to('SubCategories', subcategories_path) %></li>
+		<li><%= link_to('Articles', articles_path) %></li>
+		<li><%= link_to('Sections', sections_path) %></li>
+		<li><%= link_to('Provisions', provisions_path) %></li>
+		<li><%= link_to('Blanks', blanks_path) %></li>
+	</ul>
+	<li class = "access"><%= link_to('Logout', logout_path) %></li>
+</ul>

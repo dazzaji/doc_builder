@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Article:</b>
+  <%= @temp_doc.article %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @temp_doc.section %>
+</p>
+
+<p>
+  <b>Provision:</b>
+  <%= @temp_doc.provision %>
+</p>
+
+<p>
+  <b>Blank:</b>
+  <%= @temp_doc.blank %>
+</p>
+
+
+<%= link_to 'Edit', edit_temp_doc_path(@temp_doc) %> |
+<%= link_to 'Back', temp_docs_path %>

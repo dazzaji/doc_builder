@@ -1,0 +1,27 @@
+<%= form_for(@provision) do |f| %>
+  <% if @provision.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@provision.errors.count, "error") %> prohibited this provision from being saved:</h2>
+
+      <ul>
+      <% @provision.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :provision %><br />
+    <%= f.text_area :provision,  :cols => 40, :rows => 20 %>
+  </div>
+  
+  <div class="field">
+	<%= f.label :section %><br />
+	<%= f.select(:section_id, Section.all.collect {|s| [s.section, s.id]}) %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

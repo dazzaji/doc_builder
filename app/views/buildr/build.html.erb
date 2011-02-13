@@ -1,0 +1,10 @@
+<% @title = "Buildr" %>
+<% @sub.articles.each do |a| %>
+	<h2><%= a.article %></h2>
+	<% a.sections.each do |x| %>
+		<p><%= x.section %></p>
+		<% x.provisions.each do |p| %>
+			<em><%= p.provision %></em>
+		<% end %>
+	<% end %>
+<% end %>

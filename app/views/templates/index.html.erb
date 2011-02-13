@@ -1,0 +1,23 @@
+<h1>Templates:</h1>
+
+<table>
+  <tr>
+    <th>Template</th>
+    <th>Subcategory</th>
+    <th>Category</th>
+	<th></th>
+  </tr>
+
+<% @templates.each do |template| %>
+  <tr>
+    <td><%= link_to template.template, template, :action => :show %></td>
+    <td><%= link_to template.subcategory.subcategory, template.subcategory, :action => :show %></td>
+	<td><%= link_to template.subcategory.category.category, template.subcategory.category, :action => :show %></td>
+	<td><%= button_to 'Delete', template, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New Template', new_template_path %>

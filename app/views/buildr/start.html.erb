@@ -1,0 +1,8 @@
+<% @title = "Start" %>
+<% @categories = Category.all.collect %>
+<% @categories.each do |c| %>
+	<h2><%= c.category %></h2>
+	<% c.subcategories.each do |s| %>
+		<p><%= link_to s.subcategory, :controller => :buildr, :action => :build, :id => s.id %></p>
+	<% end %>
+<% end %>

@@ -1,0 +1,25 @@
+<h1>Listing Articles</h1>
+
+<table>
+  <tr>
+    <th>Article:</th>
+    <th>Subcategories Article Belongs in:</th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= link_to article.article, article, :action => :show %></td>
+	<td>
+		<% article.subcategories.each do |t| %>
+		<%= link_to t.subcategory, t, :action => :show %>
+		<% end %>
+	</td>
+    <td><%= button_to 'Delete', article, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New Article', new_article_path %>

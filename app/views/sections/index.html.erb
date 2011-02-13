@@ -1,0 +1,21 @@
+<h1>Listing sections</h1>
+
+<table>
+  <tr>
+    <th>Section</th>
+    <th>Belongs to:</th>
+    <th></th>
+  </tr>
+
+<% @sections.each do |section| %>
+  <tr>
+    <td><%= link_to section.section, section, :action => :show %></td>
+	<td><%= link_to section.article.article, section.article, :action => :show %></td>
+    <td><%= button_to 'Delete', section, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New Section', new_section_path %>

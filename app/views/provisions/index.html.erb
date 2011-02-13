@@ -1,0 +1,23 @@
+<h1>Listing provisions</h1>
+
+<table>
+  <tr>
+    <th>Provision</th>
+    <th>Member of:</th>
+    <th></th>
+	<th></th>
+  </tr>
+
+<% @provisions.each do |provision| %>
+  <tr>
+    <td><%= provision.provision %></td>
+	<td><%= link_to provision.section.section, provision.section, :action => :show %></td>
+	<td><%= link_to 'Examine', edit_provision_path(provision) %>
+    <td><%= button_to 'Delete', provision, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New Provision', new_provision_path %>

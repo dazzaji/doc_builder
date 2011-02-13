@@ -1,0 +1,22 @@
+# == Schema Information
+# Schema version: 20110206172912
+#
+# Table name: blanks
+#
+#  id             :integer         not null, primary key
+#  blank          :text
+#  intro_question :string(255)
+#  provision_id   :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  intro_question: MyString
+  blank: MyText
+
+two:
+  intro_question: MyString
+  blank: MyText

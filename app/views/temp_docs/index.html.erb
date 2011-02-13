@@ -1,0 +1,29 @@
+<h1>Listing temp_docs</h1>
+
+<table>
+  <tr>
+    <th>Article</th>
+    <th>Section</th>
+    <th>Provision</th>
+    <th>Blank</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @temp_docs.each do |temp_doc| %>
+  <tr>
+    <td><%= temp_doc.article %></td>
+    <td><%= temp_doc.section %></td>
+    <td><%= temp_doc.provision %></td>
+    <td><%= temp_doc.blank %></td>
+    <td><%= link_to 'Show', temp_doc %></td>
+    <td><%= link_to 'Edit', edit_temp_doc_path(temp_doc) %></td>
+    <td><%= link_to 'Destroy', temp_doc, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Temp doc', new_temp_doc_path %>

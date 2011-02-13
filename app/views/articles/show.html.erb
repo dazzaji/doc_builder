@@ -1,0 +1,13 @@
+<p>
+  <b>Article:</b><br />
+  <%= @article.article %><br />
+  <b>Member of these Templates:</b><br />
+  <% @article.subcategories.each do |a| %>
+	<%= a.subcategory %><br />
+  <% end %>
+
+</p>
+
+<%= link_to 'Index', articles_path %> |
+<%= link_to 'New', new_article_path %> |
+<%= link_to 'Edit', edit_article_path %>

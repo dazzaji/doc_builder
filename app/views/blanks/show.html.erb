@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Intro question:</b>
+  <%= @blank.intro_question %>
+</p>
+
+<p>
+  <b>Blank:</b>
+  <%= @blank.blank %>
+</p>
+
+
+<%= link_to 'Edit', edit_blank_path(@blank) %> |
+<%= link_to 'Back', blanks_path %>

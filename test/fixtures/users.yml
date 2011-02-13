@@ -1,0 +1,48 @@
+# == Schema Information
+# Schema version: 20110206172912
+#
+# Table name: users
+#
+#  id              :integer         not null, primary key
+#  first_name      :string(40)
+#  second_name     :string(40)
+#  third_name      :string(40)
+#  organization    :string(100)
+#  email           :string(255)     not null
+#  phone_number    :string(255)
+#  username        :string(40)
+#  hashed_password :string(255)
+#  salt            :string(40)
+#  role            :string(255)
+#  client_role     :string(255)
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: MyString
+  second_name: MyString
+  third_name: MyString
+  organization: MyString
+  email: MyString
+  phone_number: MyString
+  username: MyString
+  hashed_password: MyString
+  salt: MyString
+  role: MyString
+  client_role: MyString
+
+two:
+  first_name: MyString
+  second_name: MyString
+  third_name: MyString
+  organization: MyString
+  email: MyString
+  phone_number: MyString
+  username: MyString
+  hashed_password: MyString
+  salt: MyString
+  role: MyString
+  client_role: MyString

@@ -1,0 +1,19 @@
+# == Schema Information
+# Schema version: 20110206172912
+#
+# Table name: provisions
+#
+#  id         :integer         not null, primary key
+#  provision  :text
+#  section_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  provision: MyString
+
+two:
+  provision: MyString
