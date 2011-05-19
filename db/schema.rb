@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(:version => 20110212200529) do
 
   create_table "articles", :force => true do |t|
     t.string   "article"
+    t.integer  "template_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "subcategory_id"
@@ -150,6 +151,5 @@ ActiveRecord::Schema.define(:version => 20110212200529) do
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["id"], :name => "index_users_on_id"
 
 end
